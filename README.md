@@ -1,6 +1,6 @@
 # PRTH-Crypt v4.2:
 A high-performance, constant-time password hasher using a ChaCha20 sponge construction and Base72 encoding, hardened against side-channel attacks.
-
+(use at own risk)
 ## Compile
 # Clone the repo
 git clone https://github.com/Partakithware/PRTH-CRYPT.git
@@ -104,7 +104,7 @@ This gives you:
 3. **Salt integration method** (how salt is woven into state)
 4. **Domain separation constants** (specific values)
 5. **Multi-round finalization** (finalization strategy)
-6. **Specific domain constants** (to prevent cross-protocol attacks)
+6. **Specific domain constants** (deterministic message framing and avoids ambiguity)
 7. **Zero-wipe** (to clear the sensitive prth_ctx state from RAM after hashing is complete.)
 
 1. **Invite cryptanalysis?** (feel free to post to crypto.stackexchange.com & let me know!)
